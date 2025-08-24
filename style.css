@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.menu_list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.menu_list li {
+    display: flex;
+    align-items: center;
+}
+
+.menu_list li::after {
+    content: "/";
+    margin-left: 10px;
+}
+
+.menu_list li:last-child::after {
+    content: "";
+}
+
+.hero {
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.hero h1 {
+    font-family: cursive;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.hero p {
+    color: gray;
+}
+
+.content_data {
+    display: flex;
+    border: 1px solid black;
+}
+
+.content_data h3 {
+    font-family: cursive;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Projects */
+.projects {
+    min-width: 15%;
+    border: 1px solid black;
+}
+
+.projects ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.projects li {
+    border-top: 1px solid black;
+    padding: 10px;
+}
+
+.projects li:first-child {
+    border-top: none;
+}
+
+/* Work Experience */
+.work_experience {
+    min-width: 60%;
+    border: 1px solid black;
+    padding: 0;
+}
+
+.experience_item {
+    border-top: 1px solid black;
+    padding: 10px;
+}
+
+.experience_item:first-of-type {
+    border-top: none;
+}
+
+.experience_item h4 {
+    font-family: cursive;
+    margin: 0 0 5px;
+}
+
+/* Education */
+.education {
+    min-width: 25%;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.education ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.testimonial_section {
+    padding: 10px;
+}
+
+.testimonial {
+    display: flex;
+    gap: 1rem;
+}
+
+.testimonial_section h3 {
+    margin: 1rem 0;
+    font-family: cursive;
+}
+
+.testimonial_card {
+    border: 1px solid black;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.testimonial_card p {
+    margin-bottom: 1rem;
+}
+
+.testimonial_card span {
+    color: grey;
+    display: block;
+}
